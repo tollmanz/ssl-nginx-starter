@@ -14,8 +14,8 @@ Vagrant.configure("2") do |config|
 		v.customize ["modifyvm", :id, "--memory", 512]
 	end
 
-	config.vm.hostname = "sslplayrground"
-	config.hostsupdater.aliases = ["sslplayrground.dev"]
+	config.vm.hostname = "sslplayground"
+	config.hostsupdater.aliases = ["sslplayground.dev"]
 	config.vm.network :private_network, ip: "33.55.44.11"
 
 	# Make SSH key available to the box
