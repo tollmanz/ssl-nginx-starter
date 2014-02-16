@@ -80,5 +80,5 @@ checkinstall --install=no -y
 if [ ! -f /srv/salt/config/nginx/src/nginx_1.5.10-1_amd64.deb ]
 then
 	mkdir -p /srv/salt/config/nginx/src
-	cp -r ~/sources/nginx-1.5.10 /srv/salt/config/nginx/src/nginx_1.5.10-1_amd64.deb
+	cp -r ~/sources/nginx-1.5.10/nginx_1.5.10-1_amd64.deb /srv/salt/config/nginx/src/nginx_1.5.10-1_amd64.deb
 fi
