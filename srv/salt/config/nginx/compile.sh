@@ -77,7 +77,7 @@ make
 checkinstall --install=no -y
 
 # Flag that the package exists.
-if [ -f /srv/salt/config/nginx/src/nginx_1.5.10-1_amd64.deb ]
+if [ ! -f /srv/salt/config/nginx/src/nginx_1.5.10-1_amd64.deb ]
 then
 	mkdir -p /srv/salt/config/nginx/src
 	cp -r ~/sources/nginx-1.5.10 /srv/salt/config/nginx/src/nginx_1.5.10-1_amd64.deb
